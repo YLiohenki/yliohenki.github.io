@@ -1398,6 +1398,8 @@ header > p {
 .image img {
   display: block;
   width: 100%;
+  height: auto;
+  min-height: 1px;
 }
 
 .image.fit {
@@ -1950,13 +1952,113 @@ body.is-preload #wrapper {
   }
 }
 
-#main > .panel .image-container {
+#main > .panel .work-tile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
+}
+
+#main > .panel .work-tile > p, #main > .panel .work-tile > div {
+  margin: 0.3em 0 0 0;
+  padding: 0;
+  font-size: 0.8em;
+  height: 1em;
+  line-height: 1em;
+}
+
+#main > .panel .work-tile .tech-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#main > .panel .work-tile .tech-list .tech-item {
+  color: blue;
+}
+
+/* Modal */
+.my-tingle-modal .tingle-modal-box {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: calc(90vw - 96px);
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal iframe {
+  max-width: calc(90vw - 96px);
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-description {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-description .work-column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-description .work-column .work-subtitle {
+  font-size: 1.2em;
 }
 
 /* Footer */

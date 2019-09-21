@@ -351,6 +351,8 @@
 		img {
 			display: block;
 			width: 100%;
+			height: auto;
+			min-height: 1px;
 		}
 
 		&.fit {
@@ -801,9 +803,70 @@
 				}
 			}
 
-			.image-container {
+			.work-tile {
 				display: flex;
+				flex-direction: column;
 				align-items: center;
+				cursor: pointer;
+				> p, > div {
+					margin: 0.3em 0 0 0;
+					padding: 0;
+					font-size: 0.8em;
+					height: 1em;
+					line-height: 1em;
+				}
+				.tech-list {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-around;
+
+					.tech-item {
+						color: blue
+					}
+				}
+			}
+		}
+	}
+
+/* Modal */
+
+	.my-tingle-modal {
+		.tingle-modal-box {
+			min-width: fit-content;
+
+			.tingle-modal-box__content {
+				min-width: fit-content;
+				display: flex;
+    			justify-content: center;
+
+				.modal {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: fit-content;
+					max-width: calc(90vw - 96px);
+					iframe {
+						max-width: calc(90vw - 96px);
+					}
+
+					.work-description {
+						width: 100%;
+						display: flex;
+						flex-direction: row;
+						justify-content: space-around;
+
+						.work-column {
+							display: flex;
+							flex-direction: column;
+							align-items: baseline;
+
+							.work-subtitle {
+								font-size: 1.2em;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
