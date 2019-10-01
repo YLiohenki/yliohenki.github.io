@@ -176,7 +176,7 @@
     });
   }
 
-  
+
   var modal = new tingle.modal({
     footer: false,
     stickyFooter: false,
@@ -185,12 +185,20 @@
     cssClass: ["my-tingle-modal"],
     beforeClose: function () {
       return true; // close the modal
+    },
+    onClose: function () {
+      $('.work-video').each(function() {
+        var video = $(this).attr("src");
+        $(this).attr("src", "");
+        $(this).attr("src", video);
+        //this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+      });
     }
   });
 
   modal.setContent(document.getElementById('insiteCommerceHtml').innerHTML);
 
-  $("#insiteCommercePopup").click(function() {
+  $("#insiteCommercePopup").click(function () {
     modal.open();
   });
 })(jQuery);

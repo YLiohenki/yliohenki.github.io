@@ -1988,7 +1988,11 @@ body.is-preload #wrapper {
 }
 
 #main > .panel .work-tile .tech-list .tech-item {
-  color: blue;
+  color: black;
+  font-weight: bold;
+  font-size: 0.8em;
+  height: 0.8em;
+  line-height: 0.8em;
 }
 
 /* Modal */
