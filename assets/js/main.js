@@ -196,9 +196,13 @@
     }
   });
 
-  modal.setContent(document.getElementById('insiteCommerceHtml').innerHTML);
-
   $("#insiteCommercePopup").click(function () {
+    modal.setContent(document.getElementById('insiteCommerceHtml').innerHTML);
+    modal.open();
+  });
+
+  $("#drillplanPopup").click(function () {
+    modal.setContent(document.getElementById('drillplanHtml').innerHTML);
     modal.open();
   });
 })(jQuery);

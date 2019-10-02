@@ -850,6 +850,22 @@
 					align-items: center;
 					width: fit-content;
 					max-width: calc(90vw - 96px);
+
+					.work-row {
+						display: flex;
+						flex-direction: row;
+					}
+
+					.work-point {
+						font-weight: bold;
+						font-size: 0.8em;
+						line-height: 1em;
+					}
+
+					.work-technologies {
+						margin-right: 10px;
+					}
+
 					iframe {
 						max-width: calc(90vw - 96px);
 					}
@@ -866,7 +882,7 @@
 							align-items: baseline;
 
 							.work-subtitle {
-								font-size: 1.2em;
+								font-size: 1em;
 							}
 						}
 					}
