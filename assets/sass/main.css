@@ -2031,6 +2031,26 @@ body.is-preload #wrapper {
   max-width: calc(90vw - 96px);
 }
 
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-point {
+  font-weight: bold;
+  font-size: 0.8em;
+  line-height: 1em;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-technologies {
+  margin-right: 10px;
+}
+
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal iframe {
   max-width: calc(90vw - 96px);
 }
@@ -2062,7 +2082,7 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-description .work-column .work-subtitle {
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 /* Footer */
