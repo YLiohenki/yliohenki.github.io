@@ -2047,6 +2047,18 @@ body.is-preload #wrapper {
   line-height: 1em;
 }
 
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period {
+  font-size: 0.75em;
+  line-height: 1em;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period-title {
+  margin-top: 2em;
+  font-weight: bold;
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-technologies {
   margin-right: 10px;
 }
