@@ -863,19 +863,29 @@
 					}
 
 					.work-period {
+						font-weight: bold;
 						font-size: 0.75em;
 						line-height: 1em;
 					}
 
 					.work-period-title {
-						margin-top: 2em;
-						font-weight: bold;
-						font-size: 0.9em;
+						margin: 2em 0 0.3em 0;
+						font-size: 1em;
 						line-height: 1em;
 					}
 
 					.work-technologies {
 						margin-right: 10px;
+					}
+
+					.work-slides {
+						max-width: calc(90vw - 96px);
+						max-height: calc(90vh - 96px);
+						width: 560px;
+						height: 315px;
+						.slick-arrow::before {
+						 color: #888888;
+						}
 					}
 
 					iframe {
