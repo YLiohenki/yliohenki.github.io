@@ -187,7 +187,7 @@
       return true; // close the modal
     },
     onClose: function () {
-      $('.work-video').each(function() {
+      $('.work-video').each(function () {
         var video = $(this).attr("src");
         $(this).attr("src", "");
         $(this).attr("src", video);
@@ -204,5 +204,18 @@
   $("#drillplanPopup").click(function () {
     modal.setContent(document.getElementById('drillplanHtml').innerHTML);
     modal.open();
+  });
+
+  $("#correctPopup").click(function () {
+    modal.setContent(document.getElementById('correctHtml').innerHTML);
+    modal.open();
+    $(".work-slides").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      useTransform:false,
+    });
   });
 })(jQuery);
