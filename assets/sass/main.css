@@ -2068,10 +2068,24 @@ body.is-preload #wrapper {
   max-height: calc(90vh - 96px);
   width: 560px;
   height: 315px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-slides .slick-arrow::before {
   color: #888888;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-slides img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal iframe {

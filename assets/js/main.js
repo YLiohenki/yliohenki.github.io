@@ -218,4 +218,9 @@
       useTransform:false,
     });
   });
+
+  $("#pinsolPopup").click(function () {
+    modal.setContent(document.getElementById('pinsolHtml').innerHTML);
+    modal.open();
+  });
 })(jQuery);
