@@ -1,0 +1,41 @@
+title: Yauheni Liohenki's Portfolio
+
+description: A Senior Software Engineer's portfolio. Contains completed projects, resume, contacts form, links to social media.
+
+url: yliohenki.github.io
+
+author:
+  name: Yauheni Liohenki
+
+image: ./assets/img/my-photo.jpg
+
+social:
+  name: Yauheni Liohenki
+  links: 
+    - https://github.com/YLiohenki
+    - https://www.linkedin.com/in/yauheni-liohenki-79290689/
+
+social-network-links:
+  email: "legenkiyes@gmail.com"
+#  facebook: deanattali
+  github: "https://github.com/YLiohenki"
+#  twitter: daattali
+#  reddit: yourname
+  linkedin: "https://www.linkedin.com/in/yauheni-liohenki-79290689/"
+#  xing: yourname
+#  stackoverflow: "3943160/daattali"
+#  snapchat: deanat78
+#  instagram: deanat78
+#  youtube: user/deanat78
+#  spotify: yourname
+#  telephone: +14159998888
+#  steam: deanat78
+#  twitch: yourname
+#  yelp: yourname
+
+share-links-active:
+  facebook: true
+  linkedin: true
+
+staticman:
+  repository : "https://github.com/YLiohenki/yliohenki.github.io"
