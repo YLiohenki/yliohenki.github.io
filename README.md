@@ -1,6 +1,6 @@
 Yauheni Liohenki's Portfolio website
 
-The result you can see here: [yliohenki.github.io](https://yliohenki.github.io "Cloud Engineer Portfolio")
+Check the result here: [Cloud Engineer Portfolio](https://yliohenki.github.io "Cloud Engineer Portfolio")
 
 Template used: html5up.net
 
