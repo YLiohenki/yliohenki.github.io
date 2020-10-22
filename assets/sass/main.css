@@ -2168,6 +2168,18 @@ body.is-preload #wrapper {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: 20px 0 0 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-row.work-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-point {
@@ -2176,6 +2188,7 @@ body.is-preload #wrapper {
   line-height: 1;
   font-family: "Roboto", sans-serif;
   margin: 5px 0;
+  margin-top: 10px;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period {
@@ -2187,11 +2200,28 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period-title {
-  margin: 2em 0 0.3em 0;
+  margin: 0;
   line-height: 1em;
   font-size: 1em;
   font-family: "Playfair Display";
   letter-spacing: 5px;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-video-container {
+  width: calc(90vw - 96px);
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-video-container .work-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-technologies {
@@ -2238,6 +2268,26 @@ body.is-preload #wrapper {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
+  min-width: 300px;
+  max-width: 1400px;
+  margin: 50px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+}
+
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column.work-column-text {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-subtitle {
@@ -2247,8 +2297,8 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-image {
-  max-width: calc(60vw - 400px);
-  padding: 50px;
+  max-width: 100%;
+  min-width: 300px;
 }
 
 /* Footer */

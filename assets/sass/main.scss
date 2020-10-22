@@ -982,6 +982,12 @@ ul.actions {
           display: flex;
           flex-direction: row;
           margin: 20px 0 0 0;
+          flex-wrap: wrap;
+          justify-content: center;
+
+          &.work-row-reverse {
+            flex-direction: row-reverse;
+          }
         }
 
         .work-point {
@@ -990,22 +996,40 @@ ul.actions {
           line-height: 1;
           font-family: "Roboto", sans-serif;
           margin: 5px 0;
+          margin-top: 10px;
         }
 
         .work-period {
           font-weight: bold;
           font-size: 0.75em;
-		  line-height: 1em;
-		  font-family: "Roboto", sans-serif;
-		  padding-top: 5px;
+          line-height: 1em;
+          font-family: "Roboto", sans-serif;
+          padding-top: 5px;
         }
 
         .work-period-title {
-          margin: 2em 0 0.3em 0;
+          margin: 0;
           line-height: 1em;
           font-size: 1em;
           font-family: "Playfair Display";
           letter-spacing: 5px;
+        }
+
+        .work-video-container {
+          width: calc(90vw - 96px);
+          padding-top: 56.25%;
+          position: relative;
+
+          .work-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+          }
         }
 
         .work-technologies {
@@ -1039,6 +1063,18 @@ ul.actions {
           display: flex;
           flex-direction: column;
           align-items: baseline;
+          min-width: 300px;
+          max-width: 1400px;
+          margin: 50px;
+          flex-shrink: 1;
+          flex-grow: 1;
+          flex-basis: 300px;
+
+          &.work-column-text {
+            flex-shrink: 1;
+            flex-grow: 0;
+            flex-basis: 500px;
+          }
 
           .work-subtitle {
             font-size: 1em;
@@ -1047,8 +1083,8 @@ ul.actions {
           }
 
           .work-image {
-            max-width: calc(60vw - 400px);
-            padding: 50px;
+            max-width: 100%;
+            min-width: 300px;
           }
         }
       }
