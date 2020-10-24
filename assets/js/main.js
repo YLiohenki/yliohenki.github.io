@@ -193,8 +193,18 @@
         $(this).attr("src", video);
         //this.contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
       });
+
+      if ($(".work-slides").hasClass("slick-initialized")) {
+        $(".work-slides").slick("unslick");
+      }
     }
   });
+  $("#transperfectHtml").load("assets/html/transperfect.html");
+  $("#insiteCommerceHtml").load("assets/html/insitecommerce.html");
+  $("#drillplanHtml").load("assets/html/drillplan.html");
+  $("#correctHtml").load("assets/html/correct.html");
+  $("#pinsolHtml").load("assets/html/pinsol.html");
+  $("#correctHtml").load("assets/html/correct.html");
 
   $("#insiteCommercePopup").click(function () {
     modal.setContent(document.getElementById('insiteCommerceHtml').innerHTML);
@@ -209,18 +219,34 @@
   $("#correctPopup").click(function () {
     modal.setContent(document.getElementById('correctHtml').innerHTML);
     modal.open();
+
     $(".work-slides").slick({
       dots: false,
       infinite: true,
       speed: 300,
       slidesToShow: 1,
       adaptiveHeight: false,
-      useTransform:false,
+      useTransform: false,
     });
+
   });
 
   $("#pinsolPopup").click(function () {
     modal.setContent(document.getElementById('pinsolHtml').innerHTML);
     modal.open();
+  });
+
+  $("#transperfectPopup").click(function () {
+    modal.setContent(document.getElementById('transperfectHtml').innerHTML);
+    modal.open();
+
+    $(".work-slides").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: false,
+      useTransform: false,
+    });
   });
 })(jQuery);

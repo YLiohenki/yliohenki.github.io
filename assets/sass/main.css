@@ -1525,8 +1525,12 @@ header > p {
 .image img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 187px;
   min-height: 1px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .image.fit {
@@ -2170,16 +2174,15 @@ body.is-preload #wrapper {
   margin: 20px 0 0 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 100%;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-row.work-row-reverse {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-point {
@@ -2196,15 +2199,16 @@ body.is-preload #wrapper {
   font-size: 0.75em;
   line-height: 1em;
   font-family: "Roboto", sans-serif;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period-title {
   margin: 0;
-  line-height: 1em;
-  font-size: 1em;
+  line-height: 2em;
+  font-size: 2em;
   font-family: "Playfair Display";
   letter-spacing: 5px;
+  white-space: nowrap;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-video-container {
@@ -2229,10 +2233,7 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-slides {
-  max-width: calc(90vw - 96px);
-  max-height: calc(90vh - 96px);
-  width: 560px;
-  height: 315px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2242,6 +2243,8 @@ body.is-preload #wrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 100%;
+  width: 100%;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-slides .slick-arrow::before {
@@ -2270,30 +2273,38 @@ body.is-preload #wrapper {
           align-items: baseline;
   min-width: 300px;
   max-width: 1400px;
-  margin: 50px;
+  margin-top: 50px;
   -ms-flex-negative: 1;
       flex-shrink: 1;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 100;
+      -ms-flex-positive: 100;
+          flex-grow: 100;
   -ms-flex-preferred-size: 300px;
       flex-basis: 300px;
 }
 
+.my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column:first-child {
+  margin-right: 50px;
+}
+
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column.work-column-text {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -webkit-box-flex: 0;
-      -ms-flex-positive: 0;
-          flex-grow: 0;
-  -ms-flex-preferred-size: 500px;
-      flex-basis: 500px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-subtitle {
-  font-size: 1em;
+  font-size: 2em;
   font-family: "Playfair Display";
   letter-spacing: 5px;
+  white-space: nowrap;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-image {

@@ -478,8 +478,10 @@ header {
   img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 187px;
     min-height: 1px;
+    object-position: center;
+    object-fit: contain;
   }
 
   &.fit {
@@ -983,10 +985,11 @@ ul.actions {
           flex-direction: row;
           margin: 20px 0 0 0;
           flex-wrap: wrap;
-          justify-content: center;
+          justify-content: space-between;
+          max-width: 100%;
 
           &.work-row-reverse {
-            flex-direction: row-reverse;
+            flex-wrap: wrap-reverse;
           }
         }
 
@@ -1004,15 +1007,16 @@ ul.actions {
           font-size: 0.75em;
           line-height: 1em;
           font-family: "Roboto", sans-serif;
-          padding-top: 5px;
+          padding-top: 10px;
         }
 
         .work-period-title {
           margin: 0;
-          line-height: 1em;
-          font-size: 1em;
+          line-height: 2em;
+          font-size: 2em;
           font-family: "Playfair Display";
           letter-spacing: 5px;
+          white-space: nowrap;
         }
 
         .work-video-container {
@@ -1037,13 +1041,12 @@ ul.actions {
         }
 
         .work-slides {
-          max-width: calc(90vw - 96px);
-          max-height: calc(90vh - 96px);
-          width: 560px;
-          height: 315px;
+          height: auto;
           display: flex;
           align-items: center;
           justify-content: center;
+          max-width: 100%;
+          width: 100%;
 
           .slick-arrow::before {
             color: #888888;
@@ -1065,21 +1068,27 @@ ul.actions {
           align-items: baseline;
           min-width: 300px;
           max-width: 1400px;
-          margin: 50px;
+          margin-top: 50px;
           flex-shrink: 1;
-          flex-grow: 1;
+          flex-grow: 100;
           flex-basis: 300px;
 
+          &:first-child {
+            margin-right: 50px;
+          }
+
           &.work-column-text {
-            flex-shrink: 1;
-            flex-grow: 0;
-            flex-basis: 500px;
+            flex-shrink: 0;
+            flex-grow: 1;
+            flex-basis: content;
+            width: fit-content;
           }
 
           .work-subtitle {
-            font-size: 1em;
+            font-size: 2em;
             font-family: "Playfair Display";
             letter-spacing: 5px;
+            white-space: nowrap;
           }
 
           .work-image {
