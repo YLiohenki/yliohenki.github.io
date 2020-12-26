@@ -2186,29 +2186,30 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-point {
-  font-weight: bold;
-  font-size: 0.8em;
   line-height: 1;
   font-family: "Roboto", sans-serif;
-  margin: 5px 0;
-  margin-top: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+  margin-top: 0.2em;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period {
-  font-weight: bold;
-  font-size: 0.75em;
-  line-height: 1em;
+  line-height: 1;
   font-family: "Roboto", sans-serif;
-  padding-top: 10px;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20pt;
+  margin-top: 0.2em;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-period-title {
-  margin: 0;
-  line-height: 2em;
-  font-size: 2em;
-  font-family: "Playfair Display";
+  font-size: 1.8em;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 5px;
   white-space: nowrap;
+  font-weight: 400;
+  margin-bottom: 0.3em;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-video-container {
@@ -2271,7 +2272,7 @@ body.is-preload #wrapper {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  min-width: 300px;
+  min-width: 350px;
   max-width: 1400px;
   margin-top: 50px;
   -ms-flex-negative: 1;
@@ -2279,8 +2280,8 @@ body.is-preload #wrapper {
   -webkit-box-flex: 100;
       -ms-flex-positive: 100;
           flex-grow: 100;
-  -ms-flex-preferred-size: 300px;
-      flex-basis: 300px;
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column:first-child {
@@ -2301,10 +2302,12 @@ body.is-preload #wrapper {
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-subtitle {
-  font-size: 2em;
-  font-family: "Playfair Display";
+  font-size: 1.8em;
+  font-family: "Source Sans Pro", sans-serif;
   letter-spacing: 5px;
   white-space: nowrap;
+  font-weight: 400;
+  margin: 0.3em 0;
 }
 
 .my-tingle-modal .tingle-modal-box .tingle-modal-box__content .modal .work-column .work-image {
